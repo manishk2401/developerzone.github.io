@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--fontawesome-->
+  <script src="https://kit.fontawesome.com/1aa0b962c1.js" crossorigin="anonymous"></script>
+  
+  <!--Accodion-->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  
+  <!--Owl Corousel-->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <title>Developer Zone</title>
+</head>
+
+<body>
+  <section id="home">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="logo-bg"><a class="navbar-brand" href="#home"><i class="fas fa-project-diagram"></i>
+          <h6>Developer Zone</h6>
+        </a></div>
+      <button id="menu-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span><i class="fas fa-arrow-left" id="menu-icon"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item logo-hide">
+            <ul class="logo-links">
+              <li><a href="https://www.facebook.com" target="#"><i class="fa fa-facebook"></i></a></i></li>
+              <li><a href="https://www.twitter.com" target="#"><i class="fa fa-twitter"></i></a></i></li>
+              <li><a href="https://www.instagram.com" target="#"><i class="fa fa-instagram"></i></a></i></li>
+              <li><a href="https://www.linkedin.com" target="#"><i class="fa fa-linkedin"></i></a></i></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="banner-container">
+        <h2>DEVELOPER ZONE</h2>
+        <h5>This Is What We Do</h5>
+        <i class="fa fa-arrow-left" id="arrow"></i>
+        <div class="banner-links">
+          <div class="banner-btn">Start Now</div>
+          <div class="banner-btn">Learn More</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="icon">
+    <a href="">
+      <i class="fa fa-home"></i>
+    </a>
+    <a href="">
+      <i class="fa fa-book"></i>
+    </a>
+    <a href="">
+      <i class="fa fa-coffee"></i>
+    </a>
+    <a href="">
+      <i class="fa fa-anchor"></i>
+    </a>
+  </section>
+
+  <section id="services">
+    <div class="services-heading">
+      <i class="fa fa-gears"></i>
+      <div class="services-heading-contant">
+        <h4>OUR SERVICES</h4>
+        <p>This is the Services Section</p>
+      </div>
+    </div>
+    <div class="services-container">
+      <div class="services-items">
+        <i class="fa fa-apple"></i>
+        <h4>APPLE</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, repudiandae!</p>
+      </div>
+
+      <div class="services-items">
+        <i class="fa fa-google service-google"></i>
+        <h4>GOOGLE</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, repudiandae!</p>
+      </div>
+
+      <div class="services-items">
+        <i class="fa fa-android"></i>
+        <h4>ANDROID</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, repudiandae!</p>
+      </div>
+
+      <div class="services-items">
+        <i class="fa fa-gear"></i>
+        <h4>TOOLS</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, repudiandae!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h1>SUBSCRIBE HERE</h1>
+    <form action="file.js" class="sub-form">
+      <input type="email" class="email" placeholder="Your Email">
+      <input type="submit" class="submit-btn" value="SUBMIT">
+    </form>
+  </section>
+
+  <section id="projects">
+    <div class="projects-heading">
+      <div class="projects-heading-contant">
+        <h3>FUTURE PROJECTS</h3>
+        <p>These are Our Future Projects</p>
+      </div>
+      <i class="fa fa-pencil-square-o"></i>
+    </div>
+    <div class="projects-container">
+
+      <div class="button-group filter-button-group">
+        <button class="projects-btn" data-filter="*">Show All</button>
+        <button class="projects-btn" data-filter=".City">City</button>
+        <button class="projects-btn" data-filter=".Forest">Forest</button>
+        <button class="projects-btn" data-filter=".River">River</button>
+      </div>
+
+      <!--grid-->
+      <div class="grid">
+        <div class="element-item City"><img
+            src="https://cdn.pixabay.com/photo/2019/07/04/18/49/city-4317139_960_720.jpg" alt=""></div>
+        <div class="element-item City"><img src="https://live.staticflickr.com/1783/43569798921_23f962c03c_b.jpg"
+            alt=""></div>
+        <div class="element-item City"><img
+            src="https://www.goodfreephotos.com/albums/other-photos/small-mini-city-model.jpg" alt=""></div>
+        <div class="element-item City"><img src="https://live.staticflickr.com/4013/4557762400_4e621e0be8_b.jpg" alt="">
+        </div>
+
+
+        <div class="element-item Forest"><img
+            src="https://cdn.pixabay.com/photo/2019/08/04/09/20/forest-4383436_960_720.jpg" alt=""></div>
+        <div class="element-item Forest"><img
+            src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt=""></div>
+        <div class="element-item Forest"><img src="https://storage.needpix.com/rsynced_images/winter-1908500_1280.jpg"
+            alt=""></div>
+        <div class="element-item Forest"><img
+            src="https://libreshot.com/wp-content/uploads/2019/11/two-white-horses-in-forest-861x574.jpg" alt=""></div>
+
+
+        <div class="element-item River"><img
+            src="https://cdn.pixabay.com/photo/2014/05/03/00/09/landscape-336542_960_720.jpg" alt="">
+        </div>
+        <div class="element-item River"><img
+            src="https://www.goodfreephotos.com/cache/other-landscapes/lake-and-ripples-in-the-water-in-river_800.jpg?cached=1544742051"
+            alt=""></div>
+        <div class="element-item River"><img
+            src="https://p0.pikrepo.com/preview/116/25/river-in-the-middle-of-forest-during-daytime.jpg" alt=""></div>
+        <div class="element-item River"><img
+            src="https://cdn.pixabay.com/photo/2019/10/30/07/48/river-4588916_960_720.jpg" alt=""></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-heading">
+      <i class="fa fa-user"></i>
+      <div class="about-heading-contant">
+        <h4>ABOUT US</h4>
+        <p>This Section Is For About Us</p>
+      </div>
+    </div>
+    <div class="about-container">
+
+      <div class="about-image" id="">
+        <img src="https://c0.wallpaperflare.com/preview/372/989/155/interior-furniture-white-office.jpg" alt="">
+      </div>
+
+      <div id="accordion">
+        <h3>Press Here For More Info</h3>
+        <div>
+          <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Press Here For More Info</h3>
+        <div>
+          <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+            suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Press Here For More Info</h3>
+        <div>
+          <p>
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="current-projects">
+    <div class="cprojects-heading">
+      <i class="fa fa-image"></i>
+      <div class="cprojects-heading-contant">
+        <h4>CURRENT PROJECTS</h4>
+        <p>These Are Our Current Projects</p>
+      </div>
+    </div>
+    <div class="current-container">
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849804_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2015/07/17/22/42/startup-849805_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2015/05/28/14/38/ux-787980_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2017/01/17/15/24/network-1987209_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2017/09/05/10/08/office-2717014_960_720.jpg" alt="">
+      </div>
+      <div class="current-image">
+        <img src="https://cdn.pixabay.com/photo/2017/01/11/15/35/busy-1972122_960_720.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="number">
+    <div class="number-item">
+      <i class="fa fa-user"></i>
+      <h5><span class='numscroller' data-min='1' data-max='1000' data-delay='3000' data-increment='1'>1000</span></h5>
+      <h5>USERS</h5>
+    </div>
+    <div class="number-item">
+      <i class="fa fa-cart-plus"></i>
+      <h5><span class='numscroller' data-min='1' data-max='1000' data-delay='1000' data-increment='1'>1000</span></h5>
+      <h5>DOWNLOADS</h5>
+    </div>
+    <div class="number-item">
+      <i class="fa fa-fire-extinguisher"></i>
+      <h5><span class='numscroller' data-min='1' data-max='1000' data-delay='5000' data-increment='1'>1000</span></h5>
+      <h5>EMERGENCIES</h5>
+    </div>
+    <div class="number-item">
+      <i class="fa fa-envelope"></i>
+      <h5><span class='numscroller' data-min='0' data-max='1000' data-delay='800' data-increment='1'>1000</span></h5>
+      <h5>MESSAGES</h5>
+    </div>
+  </section>
+
+
+  <section class="team">
+    <div class="team-heading">
+      <i class="fa fa-users"></i>
+      <div class="team-heading-contant">
+        <h4>MEET OUR TEAM</h4>
+        <p>They Are Our Team Members</p>
+      </div>
+    </div>
+
+    <div class="team-container">
+      <article class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_960_720.jpg" width="151.5px"
+          alt="">
+        <h3> Ishan Kashyap</h3>
+        <h6>Developer</h6>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam corrupti animi repellendus, distinctio
+          recusandae ad ab atque sunt quae eaque?</p>
+        <div class="team-item-links">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.google.com"><i class="fa fa-google"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div>
+      </article>
+      <article class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2017/02/04/12/25/man-2037255_640.jpg" width="158px" alt="">
+        <h3> Ishan Kashyap</h3>
+        <h6>Developer</h6>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam corrupti animi repellendus, distinctio
+          recusandae ad ab atque sunt quae eaque?</p>
+        <div class="team-item-links">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.google.com"><i class="fa fa-google"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div>
+      </article>
+      <article class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_640.jpg" width="150px" alt="">
+        <h3> Ishan Kashyap</h3>
+        <h6>Developer</h6>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam corrupti animi repellendus, distinctio
+          recusandae ad ab atque sunt quae eaque?</p>
+        <div class="team-item-links">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.google.com"><i class="fa fa-google"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div>
+      </article>
+      <article class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2015/01/08/18/30/entrepreneur-593371_640.jpg" width="150px" alt="">
+        <h3> Ishan Kashyap</h3>
+        <h6>Developer</h6>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam corrupti animi repellendus, distinctio
+          recusandae ad ab atque sunt quae eaque?</p>
+        <div class="team-item-links">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.google.com"><i class="fa fa-google"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="progress-bars">
+    <div class="progress-container">
+      <div class="progress-item">
+        <div class="progress-data">
+          <h4>HTML</h4>
+          <h4>35%</h4>
+        </div>
+        <div id="data-1"></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-data">
+          <h4>CSS</h4>
+          <h4>70%</h4>
+        </div>
+        <div id="data-2"></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-data">
+          <h4>JAVASCRIPT</h4>
+          <h4>54%</h4>
+        </div>
+        <div id="data-3"></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-data">
+          <h4>JAVA</h4>
+          <h4>86%</h4>
+        </div>
+        <div id="data-4"></div>
+      </div>
+    </div>
+  </section>
+
+<section id="prices">
+  <div class="prices-heading">
+    <i class="fa fa-money"></i>
+    <div class="prices-heading-contant">
+      <h4>OUR PRICES</h4>
+      <p>This Is Our Prices Section</p>
+    </div>
+  </div>
+  <div class="prices-container">
+    <div class="prices-card">
+      <h2>Startup</h2>
+      <h1>$0</h1>
+      <p><i class="fa fa-check"></i> Sharing Tools</p>
+      <p><i class="fa fa-check"></i> Desing Tools</p>
+      <p><i class="fa fa-times"></i> Private Messages</p>
+      <p><i class="fa fa-times"></i> Personal Brand</p>
+     <a href="">UPGRADE PLAN</a>
+    </div>
+
+    <div class="prices-card pro-card">
+      <h2>Pro</h2>
+      <h1>$50</h1>
+      <p><i class="fa fa-check"></i> Sharing Tools</p>
+      <p><i class="fa fa-check"></i> Desing Tools</p>
+      <p><i class="fa fa-check"></i> Private Messages</p>
+      <p><i class="fa fa-times"></i> Personal Brand</p>
+      <a href="">UPGRADE PLAN</a>
+    </div>
+
+    <div class="prices-card">
+      <h2>Commercial</h2>
+      <h1>$100</h1>
+      <p><i class="fa fa-check"></i> Sharing Tools</p>
+      <p><i class="fa fa-check"></i> Desing Tools</p>
+      <p><i class="fa fa-check"></i> Private Messages</p>
+      <p><i class="fa fa-check"></i> Personal Brand</p>
+      <a href="">UPGRADE PLAN</a>
+    </div>
+  </div>
+</section>
+
+<section class="quotes">
+  <div class="quotes-heading">
+    <i class="fa fa-comments"></i>
+    <div class="quotes-heading-contant">
+      <h4>WHAT THEY SAY</h4>
+      <p>This Is Quotes Section</p>
+    </div>
+  </div>
+  <div class="quotes-container owl-carousel owl-theme">
+    <div class="quotes-item">
+      <img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/programming-593312_960_720.jpg" width="200px" alt="">
+      <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dicta.</p>
+      <h5>-customer</h5>
+    </div>
+    
+    <div class="quotes-item">
+      <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_640.jpg" width="200px" alt="">
+      <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dicta.</p>
+      <h5>-customer</h5>
+    </div>
+    
+    <div class="quotes-item">
+      <img src="https://cdn.pixabay.com/photo/2017/03/04/12/15/programming-2115930_640.jpg" width="200px" alt="">
+      <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dicta.</p>
+      <h5>-customer</h5>
+    </div>
+  </div>
+</section>
+
+<section class="footer" id="contact">
+  <div class="footer-contant">
+    <div class="footer-contant-item">
+      <i class="fa fa-check"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, recusandae!</p>
+    </div>
+    <div class="footer-contant-item">
+      <i class="fa fa-check"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, recusandae!</p>
+    </div>
+    <div class="footer-contant-item">
+      <i class="fa fa-check"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, recusandae!</p>
+    </div>
+    <div class="footer-contant-item">
+      <i class="fa fa-check"></i>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, recusandae!</p>
+    </div>
+  </div>
+  <div class="footer-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.16374416515!2d76.81307079266887!3d28.6472799349753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1610190832867!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</section>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <!--Isotope-->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!--Accodin-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <!--NumScroller-->
+  <script src="numscroller-gh-pages/numscroller-1.0.js"></script>
+
+<!--Owl JS-->
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+
+
+</body>
+
+</html>

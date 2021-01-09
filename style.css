@@ -1,0 +1,1021 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Comic+Neue:wght@700&family=Luckiest+Guy&display=swap');
+
+/*
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Acme', sans-serif;
+font-family: 'Comic Neue', cursive;
+*/
+
+*{
+    padding: 0px; margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    border-top: 5px solid darkorange;
+    border-bottom: 5px solid darkorange;
+    background-color: darkorange;
+    padding: 0px !important;
+    z-index: 10;
+}
+.logo-bg{
+    background-color: darkorange;
+}
+.navbar-brand{
+    font-size: 1.5rem !important;
+    padding: 0px 20px !important;
+    margin: 0px 10px 0px 10px;
+    color: darkorange !important;
+    text-align: center;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    background-color: rgb(92, 62, 40);
+    transition: box-shadow 1s ease;
+}
+.navbar-brand h6{
+    font-size: 0.8rem;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
+}
+.navbar-brand:hover{
+    box-shadow: 2px -2px 10px black;
+}
+button{
+    margin: 0px 10px !important;
+    border: none !important;
+}
+#menu-btn{
+    font-size: 1.5rem !important;
+    color: rgb(92, 62, 40);
+    transition: transform 1s ease;
+}
+#menu-btn:focus{
+    outline: none;
+}
+.menu-btn{
+    transform: rotate(-90deg);
+}
+
+.nav-link{
+    background-color: rgb(92, 62, 40);
+    color: darkorange !important;
+    font-size: 1.2rem;
+    padding: 10px !important;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 3px;
+    transition: background 1s ease, color 1s ease;
+}
+.nav-link:hover{
+    background-color: darkorange;
+    color: rgb(92, 62, 40) !important;
+}
+
+.logo-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.logo-links>li{
+    list-style-type: none;
+}
+.logo-links a{
+    display: block;
+    background-color: rgb(92, 62, 40);
+    color: darkorange;
+    padding: 5px 0!important;
+    font-family: 'Courgette', cursive !important;
+    text-align: center;
+    font-size: 1.3rem !important;
+    transition: background 1s ease, color 1s ease;
+}
+.logo-links a:hover{
+    background-color: darkorange;
+    color: rgb(92, 62, 40);
+}
+.banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.212)), url(https://c.pxhere.com/photos/53/90/programming_code_imac_computer_computer_programming_computer_user_freelance_coding-1379202.jpg!d) no-repeat center/cover fixed;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-container>h2{
+    font-size: 3.5rem;
+    color: darkorange;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
+}
+.banner-container>h5{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+}
+.banner-links{
+    display: flex;
+    justify-content: center;
+}
+.banner-btn{
+    color: darkorange;
+    font-size: 1.5rem;
+    font-family: 'Comic Neue', cursive;
+    border: solid 3px darkorange;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background 1s ease, color 1s ease;
+}
+.banner-btn:hover{
+    background-color: darkorange;
+    color: rgb(92, 62, 40);
+}
+
+@media screen and (min-width:767px){
+    .navbar{
+        background-color: rgb(92, 62, 40);
+    }
+    .logo-hide{
+        display: none !important;
+    }
+    .navbar-nav{
+        flex: 1 0 auto;
+        padding: 0px 10px !important;
+        justify-content: space-around;
+    }
+    .nav-item{
+        flex: 1 0 100px;
+    }
+    .nav-link{
+        margin: 5px 0px;
+        border-radius: 10px !important;
+        text-align: center;
+    }
+
+}
+
+/*icon section*/
+.icon{
+    height: 120px;
+    background-color: rgb(41, 31, 31);
+    text-align: center;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 45%);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.icon i{
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    color: darkorange;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    transition: transform 1s ease, color 1s ease;
+}
+.icon i:hover{
+    color: white;
+    transform: translateY(-10px);
+}
+/*Services Section*/
+.services-heading{
+    display: flex;
+    margin-top: -20px;
+}
+.services-heading i{
+    font-size: 4rem;
+    padding: 0 10px;
+    border-right: solid rgb(182, 182, 182) 5px ;
+    color: darkorange;
+}
+.services-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.services-heading-contant h4{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+.services-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: grey;
+    font-family: 'Comic Neue', cursive;
+}
+.services-items{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.services-items i{
+    color: yellow;
+    font-size: 3rem;
+    background-color: darkorange;
+    transition: background 2s ease, color 2s ease;
+    margin: 10px;
+}
+.services-items i:hover{
+    background-color: rgb(92, 62, 40);
+    color: darkorange;
+}
+.fa-apple{
+    clip-path: polygon(50% 0,50% 0,100% 100%,0 100%);
+    padding: 70px 60px 40px 60px;
+}
+.fa-android{
+    clip-path: polygon(50% 0,50% 0,100% 100%,0 75%);
+    padding: 60px 60px 60px 60px;
+}
+.service-google{
+    padding: 70px 60px 40px 60px;
+    clip-path: polygon(50% 0%,50% 0%,150% 100%,-50% 100%) ;
+}
+.fa-gear{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    padding: 60px 60px 60px 60px;
+}
+.services-items h4{
+    font-family: 'Acme', sans-serif;
+}
+.services-items p{
+    font-family: 'Comic Neue', cursive;
+    color: grey
+}
+@media screen and (min-width:600px){
+    .services-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media screen and (min-width:900px){
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.subscribe{
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(https://www.publicdomainpictures.net/pictures/290000/velka/vintage-mail-background.jpg) no-repeat center/cover fixed;
+    padding: 1rem;
+    min-height: 50vh;
+    clip-path: polygon(0% 20%, 100% 0,100% 80%,0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe h1{
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+.sub-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.email{
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px white;
+    margin: 0 1rem;
+}
+.email::placeholder{
+    color: white;
+    font-family: 'Comic Neue', cursive;
+}
+.submit-btn{
+    font-family: 'Acme', sans-serif;
+    display: inline-block;
+    background: transparent;
+    border: solid white 3px;
+    color: darkorange;
+    font-size: 2rem;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 0px 20px;
+    transition: all 2s ease;
+}
+.submit-btn:hover{
+    background-color: darkorange;
+    color: white;
+    border: solid darkorange;
+}
+
+/*Projects Section*/
+.projects-heading{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -15px;
+}
+.projects-heading i{
+    font-size: 4rem;
+    padding: 0 10px;
+    border-left: solid rgb(182, 182, 182) 5px ;
+    color: darkorange;
+}
+.projects-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.projects-heading-contant h3{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.7rem;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.projects-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: grey;
+    font-family: 'Comic Neue', cursive;
+}
+.projects-container{
+    padding: 21px 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.button-group{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-btn{
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5rem !important;
+    padding: 2px 20px;
+    margin: 0.5rem !important;
+    border-radius: 10px;
+    border: solid 3px darkorange !important;
+    transition: all 1s ease;
+}
+.projects-btn:hover{
+    background-color: darkorange;
+}
+
+.grid img{
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    border: solid 5px darkorange;
+}
+.element-item{
+    width: calc(50% - 20px);
+    margin: 5px;
+}
+@media screen and (min-width:950px){
+    .element-item{
+        width: calc(25% - 10px);
+    }
+}
+/*About Section*/
+#about{
+    background: linear-gradient(rgba(255, 140, 0, 0.4), rgba(255, 140, 0, 0.4)), url(https://c0.wallpaperflare.com/preview/745/709/180/background-black-coffee-close-up-coffee.jpg) no-repeat center/cover fixed;
+    padding: 2.5rem 1rem 3.8rem 1rem;
+    clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
+}
+.about-heading{
+    display: flex;
+}
+.about-heading i{
+    font-size: 4rem;
+    padding: 0 10px;
+    border-right: solid rgb(182, 182, 182) 5px ;
+    color: darkorange;
+}
+.about-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.about-heading-contant h4{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+.about-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: rgb(59, 59, 59);
+    font-family: 'Comic Neue', cursive;
+}
+.about-image{
+    width: 90vw;
+    margin: 2rem auto;
+}
+.about-image img{
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 2s ease;
+}
+
+.about-image img:hover{
+    transform: scale(0.8);
+}
+
+#accordion h3{
+    padding: 15px 0;
+    background: none;
+    color: yellow;
+    border: solid yellow 2px;
+    background-color: darkorange;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Acme', sans-serif;
+    transition: all 1s ease;
+}
+#accordion h3:hover{
+    color: rgb(92, 62, 40);
+    border: 2px solid rgb(92, 62, 40);
+}
+
+#accordion p{
+    padding:0px;
+    font-family: 'Comic Neue', cursive;
+}
+
+@media screen and (min-width:770px){
+    .about-container{
+        display: flex;
+    }
+    .about-image{
+        flex: 1 0 50%;
+        margin: 20px;
+        /*width: calc(50% - 20px);*/
+    }
+    #accordion{
+        flex: 1 0 50%;
+        /*width: calc(50% - 20px);*/
+        margin: auto 0px;
+    }
+}
+/*Current Projects*/
+.cprojects-heading{
+    display: flex;
+    margin: 1.5rem 0 1.5rem 0.5rem;
+}
+.cprojects-heading i{
+    font-size: 4rem;
+    padding: 0 10px;
+    border-right: solid rgb(182, 182, 182) 5px ;
+    color: darkorange;
+}
+.cprojects-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.cprojects-heading-contant h4{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.cprojects-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: grey;
+    font-family: 'Comic Neue', cursive;
+}
+.current-image{
+    width: 100vw;
+    background-color: darkorange;
+}
+.current-image img{
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+.current-image:hover img{
+    opacity: 0.7;
+}
+@media screen and (min-width:600px){
+    .current-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .current-image{
+        flex:0 0 50%;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .current-image{
+        flex:0 0 25%;
+    }
+}
+/*Number*/
+.number{
+    text-align: center;
+}
+.number-item{
+    background-color: black;
+    padding: 2rem 0;
+    color: rgb(255, 198, 129);
+    transition: background 1s ease, color 1s ease;
+}
+.number-item i{
+    font-size: 4rem;
+}
+.number-item h5{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.number-item:hover{
+    background-color: rgb(44, 24, 0);
+    color: darkorange;
+}
+@media screen and (min-width:600px){
+    .number{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .number-item{
+        flex:0 0 50%;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .number-item{
+        flex:0 0 25%;
+    }
+}
+
+/*Team Section*/
+.team{
+    background-color: rgb(189, 219, 129);
+    padding: 0.5rem;
+}
+.team-heading{
+    display: flex;
+    margin: 2rem 0;
+}
+.team-heading i{
+    font-size: 4rem;
+    padding: 0 10px;
+    border-right: solid tomato 5px ;
+    color: darkorange;
+}
+.team-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.team-heading-contant h4{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.team-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: tomato;
+    font-family: 'Comic Neue', cursive;
+}
+.team-container{
+    padding: 1rem;
+}
+.team-item{
+    text-align: center;
+    background-color: white;
+    border-radius: 22px;
+    border: black solid 2px;
+    transition: background 2s ease;
+    margin: 5rem auto;
+}
+.team-item:hover{
+    background-color: aqua;
+}
+
+.team-item img{
+    border-radius: 50%;
+    margin-top: -54px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+}
+.team-item>h3{
+    font-family: 'Acme', sans-serif;
+}
+.team-item>h6{
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+.line{
+    background-color: darkorange;
+    max-width: 250px ;
+    height: 3px;
+    margin: 0.5rem auto;
+}
+.team-item>p{
+    padding: 0.1rem 1.5rem;
+    font-family: 'Comic Neue', cursive;
+}
+
+.team-item-links{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.team-item-links>a{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: yellow;
+    transition: color 1s ease;
+}
+.team-item-links>a:hover{
+    color: aqua;
+}
+
+.team-item-links>.fa-google{
+    padding: 0cm;
+}
+@media screen and (min-width:600px){
+    .team-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}
+
+@media screen and (min-width:1100px){
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*Progress Bars*/
+.progress-bars{
+    background: linear-gradient(rgba(255, 140, 0, 0.384),rgba(255, 140, 0, 0.363)), url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_640.jpg) no-repeat center/cover fixed;
+    padding: 5rem 0rem;
+}
+.progress-container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.progress-item{
+    margin: 20px 0;
+}
+.progress-data{
+    color: rgb(0, 110, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.progress-data h4{
+    margin: 0px;
+}
+.ui-progressbar{
+    background-color: white !important;
+    border: solid 2px rgb(0, 110, 255) !important;
+    border-radius: 5px !important;
+}
+.ui-progressbar-value{
+    background: transparent !important;
+    background-color: darkorange !important;
+}
+.ui-progressbar-value:focus{
+    outline: none !important;
+}
+
+/*Prices Section*/
+#prices{
+    padding: 1rem;
+    background-color: black;
+}
+.prices-heading{
+    display: flex;
+    margin-top: 2rem;
+}
+.prices-heading i{
+    font-size: 4rem;
+    align-items: center;
+    padding: 0 10px;
+    border-right: solid grey 5px ;
+    color: darkorange;
+}
+.prices-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.prices-heading-contant h4{
+    color: darkorange;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.prices-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: grey;
+    font-family: 'Comic Neue', cursive;
+}
+.prices-container{
+    padding: 1rem;
+}
+.prices-card{
+    max-width: 90vw;
+    margin: 2rem 0;
+    padding: 2rem 0rem;
+    color: white;
+    text-align: center;
+}
+.prices-card>h2{
+    color: aqua;
+    font-size: 2.5rem;
+    font-family: 'Acme', sans-serif;
+}
+.prices-card>h1{
+    font-family: 'Acme', sans-serif;
+    font-size: 4rem;
+    margin: 20px 0;
+}
+.prices-card>p{
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.prices-card i{
+    font-size: 1.5rem;
+}
+.prices-card>a{
+    border: solid white 2px;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: color 2s ease, background 2s ease, border 2s ease;
+}
+.prices-card>a:hover{
+    color: black;
+    background-color: aqua;
+    border: solid aqua 2px;
+    text-decoration: none;
+}
+
+.pro-card{
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    transition: transform 2s ease;
+}
+.pro-card:hover{
+    transform: translateY(-20px);
+}
+.pro-card>a{
+    color: darkorange;
+    border: solid darkorange;
+    transition: background 2s ease, color 2s ease;
+}
+.pro-card>a:hover{
+    background-color: darkorange;
+    color: black;
+    border: solid darkorange;
+}
+@media screen and (min-width:750px){
+    .prices-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}
+@media screen and (min-width:1050px){
+    .prices-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*Quotes Section*/
+.quotes{
+    background: linear-gradient(rgba(19, 10, 0, 0.9), rgb(19, 10, 0, 0.9)), url(https://www.publicdomainpictures.net/pictures/290000/velka/vintage-mail-background.jpg) no-repeat center/cover fixed;
+    padding: 1rem;
+}
+.quotes-heading{
+    display: flex;
+    margin-top: 2rem;
+}
+.quotes-heading i{
+    font-size: 4rem;
+    align-items: center;
+    padding: 0 10px;
+    border-right: solid grey 5px ;
+    color: darkorange;
+}
+.quotes-heading-contant{
+    padding: 0px 10px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.quotes-heading-contant h4{
+    color: darkorange;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+.quotes-heading-contant p{
+    margin: 0px;
+    font-size: 1.2rem;
+    color: grey;
+    font-family: 'Comic Neue', cursive;
+}
+.quotes-container{
+    padding: 1rem;
+}
+.quotes-item{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.quotes-item img{
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    width: 250px !important;
+}
+.quotes-item>p{
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+
+}
+.quotes-item i{
+    color: darkorange;
+    font-size: 2rem !important;
+}
+.quotes-item>h5{
+    font-family: 'Acme', sans-serif;
+    color: darkorange;
+}
+.page-link{
+    padding: 5px 30px !important;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+}
+.owl-theme .owl-nav [class*=owl-]:focus {
+    outline: none !important;
+}
+
+/*footer section*/
+.footer{
+    background-color: rgb(189, 219, 129);
+    padding: 2rem 0;
+    min-height: 60vh;
+}
+
+.footer-contant-item{
+    display: flex;
+    margin: 10px 0;
+}
+.footer-contant-item>p{
+    margin: 0px;
+    font-family: 'Comic Neue', cursive;
+    text-align: justify;
+}
+.footer-contant-item i{
+    padding: 10px;
+    font-size: 1.5rem;
+    background: black;
+    color: darkorange;
+    margin-right: 15px;
+}
+iframe{
+    display: block;
+    border-radius: 20px;
+}
+iframe, .footer-contant{
+    margin: 1rem auto;
+    width: 90%;
+}
+@media screen and (min-width:770px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:499px){
+    *{
+        font-size: 0.9rem;
+    }
+    #menu-icon{
+        font-size: 1.3rem;
+    }
+    .services-heading i {
+        font-size: 3rem;
+    }
+    .services-heading-contant h4 {
+        font-size: 1.5rem;
+    }
+    .services-heading {
+        margin-top: -10px;
+    }
+    .subscribe h1 {
+        font-size: 2rem;
+    }
+    .sub-form {
+        margin: 0 auto;
+    }
+    .email{
+        width: 90%;
+    }
+    .email::placeholder{
+        font-size: 1.5rem;
+    }
+    .projects-heading i {
+        font-size: 3rem;
+    }
+    .projects-heading-contant h3 {
+        font-size: 1.5rem;
+    }
+    .projects-heading {
+        margin-top: -3px;
+    }
+    .projects-heading-contant p {
+        font-size: 1.1rem;
+    }
+    .about-heading i {
+        font-size: 3rem;
+    }
+    .about-heading-contant h4 {
+        font-size: 1.5rem;
+    }
+    .about-heading {
+        margin-top: -10px;
+    }
+    .about-heading-contant>p{
+        font-size: 1.1rem;
+    }
+    .cprojects-heading i {
+        font-size: 3rem;
+    }
+    .cprojects-heading-contant h4 {
+        font-size: 1.5rem;
+    }
+    .cprojects-heading {
+        margin-top: 0px;
+    }
+    .cprojects-heading-contant>p{
+        font-size: 1.1rem;
+    }
+    .numscroller{
+        font-size: 1.5rem;
+    }
+    .team-heading i {
+        font-size: 3rem;
+    }
+    .team-heading-contant h4 {
+        font-size: 1.5rem;
+    }
+    .team-heading {
+        margin-top: 30px;
+    }
+    .team-heading-contant>p{
+        font-size: 1rem;
+    }
+    
+    .prices-heading i {
+        font-size: 3.5rem;
+    }
+    .prices-heading-contant h4 {
+        font-size: 1.5rem;
+    }
+    .prices-heading {
+        margin-top: 30px;
+    }
+    .prices-heading-contant>p{
+        font-size: 1rem;
+    }
+    
+    .quotes-heading i {
+        font-size: 3.5rem;
+    }
+    .quotes-heading-contant h4 {
+        font-size: 1.5rem;
+    }
+    .quotes-heading {
+        margin-top: 30px;
+    }
+    .quotes-heading-contant>p{
+        font-size: 1rem;
+    }
+
+}
